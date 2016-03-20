@@ -7,13 +7,13 @@ class footballnews_model extends CI_Model {
 
         public function get_news($chpu = FALSE){
                 if ($chpu === FALSE){
-                        $this->db->order_by('date','DESC');
+                        $this->db->order_by('id','DESC');
                         $query = $this->db->get('news');
                         return $query->result_array();
                 }
 
-        $query = $this->db->get_where('news', array('chpu' => $chpu));
-        return $query->row_array();
+            $query = $this->db->get_where('news', array('chpu' => $chpu));
+            return $query->row_array();
         }
 
         public function set_news()
@@ -28,6 +28,34 @@ class footballnews_model extends CI_Model {
                     'text' => $this->input->post('text')
                 );
 
-        return $this->db->insert('news', $data);
+            return $this->db->insert('news', $data);
+        }
+
+        public function set_rate($chpu = FALSE)
+        {
+
+            $this->db->set('rate', 'rate+1', FALSE);
+            $this->db->where('chpu', $chpu);
+            $this->db->update('news');
+
+        }
+
+        public function get_fact($id = 1){
+
+            $query = $this->db->get_where('facts', array('id' => $id));
+            return $query->row_array();
+        }
+
+        public function get_forecast($id = 1){
+
+            $query = $this->db->get_where('forecasts', array('id' => $id));
+            return $query->row_array();
+        }
+
+        public function get_big_event($chpu = FALSE){
+
+
+            $query = $this->db->get_where('big_event', array('chpu' => $chpu));
+            return $query->row_array();
         }
 }

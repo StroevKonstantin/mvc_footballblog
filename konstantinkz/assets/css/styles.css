@@ -1,5 +1,4 @@
 .header {
-	/*background: url(../img/footer-right.png) right top no-repeat;*/
     background-color: #252525;
     background-size: 30% 100%;
    	padding: 40px 0 25px 0;
@@ -9,14 +8,11 @@
 }
 
 .main {
-	/*padding-top: 40px;*/
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .footer {
-	/*background: url(../img/footer-right.png) right top no-repeat;*/
     background-color: #fff;
-    /*background-size: 45% 100%;*/
    	padding: 20px 0 10px 0;
    	font-family: "Trebuchet MS", Helvetica, sans-serif;
    	border-top: 5px solid #3498DB;
@@ -38,7 +34,6 @@
     clear: both;
     background: #fff;
     box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);   
-    /*border-radius: 0.3em;*/
 }
 
 .post-image {
@@ -47,8 +42,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    /*border-radius: 0.3em;*/
-    /*box-shadow: 1px 2px 2px rgba(50, 50, 50, 0.14);*/
  }
 
 .post_content {
@@ -64,7 +57,7 @@
 }
 
 .day {
-    font-size: 60px;
+    font-size: 3em;
     letter-spacing: -2px;
     color: #3498DB;
     text-shadow: 2px 2px 1px rgba(50, 50, 50, 0.14);
@@ -74,7 +67,7 @@
 .month {
     color: #aaa;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1em;
     padding: 10px 0;
 }
 
@@ -141,16 +134,16 @@ p {
 
 .super-top {
     width: 100%;
-    height: 330px;
+/*    height: 330px;*/
     position: relative;
     overflow: hidden;
     box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
 .super-top__link {
     color: #fff;
-    height: 330px;
+/*    height: 330px;*/
     display: block;
     position: relative;
 }
@@ -162,11 +155,17 @@ p {
 }
 
 .super-top__img-bg {
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 38em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .super-top__text-block-wrapper {
-    width: 45%;
+    /*width: 45%;*/
     height: 100%;
     position: relative;
     text-align: center;
@@ -207,7 +206,6 @@ p {
     position: relative;
     min-height: 350px;
     background-color: #212121;
-    margin-bottom: 10px;
     text-align: center;
     box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
 }
@@ -226,7 +224,7 @@ p {
     z-index: 8;
 }
 
-.topstake > a {
+.topstake > div {
     position: relative;
     display: block;
     /*padding: 20px 10px 0;*/
@@ -270,7 +268,7 @@ p {
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 110px;
+    height: 9em;
     padding: 0 !important;
 }
 
@@ -299,7 +297,17 @@ p {
 }
 
 .topstake_padding {
-    padding: 14px 0 0 0 !important;
+    padding: 7px !important;
+}
+
+.btn_forecast{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
 }
 
 .table_tour {
@@ -332,16 +340,16 @@ p {
 }
 
 a.logo {
-    width: 306px;
-    height: 27px;
+    width: 250px;
+    height: 25px;
     margin: 0;
-    padding: 0;
+    padding: 25px;
     float: left;
     background: url('http://news.sportbox.ru/sites/all/libraries/design/_spbver_/sportbox2015/logo.png') no-repeat top center;
-    -webkit-background-size: 240px 54px;
-    -moz-background-size: 240px 54px;
-    -o-background-size: 240px 54px;
-    background-size: 306px 24px;
+    -webkit-background-size: 250px 25px;
+    -moz-background-size: 250px 25px;
+    -o-background-size: 250px 25px;
+    background-size: 250px 25px;
 }
 
 .top-box p {
@@ -359,10 +367,10 @@ a.logo {
 }
 
 .main_news_title {
-    padding: 20px 50px 0 20px;
+    padding: 20px 20px 0 20px;
     background: #f27046;
-    text-align: right;
     text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+    text-transform: uppercase;
 }
 
 .main_news_title_bottom {
@@ -384,7 +392,7 @@ a.logo {
     width: 30px;
     background-size: cover;
     display: inline-block;
-    background-image: url('https://bookmakersrating.ru/wp-content/themes/base/assets/img/flags/ru_RU.png?1222');
+    background-image: url(../img/ru.png);
     border-radius: 50%;
     margin: 5px;
     text-indent:-9999px;
@@ -395,8 +403,141 @@ a.logo {
     width: 30px;
     background-size: cover;
     display: inline-block;
-    background-image: url('https://bookmaker-ratings.com/wp-content/themes/base/assets/img/flags/en_US.png?1222');
+    background-image: url(../img/en.png);
     border-radius: 50%;
     margin: 5px;
     text-indent:-9999px;
+}
+
+.country-list .kz {
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    display: inline-block;
+    background-image: url(../img/kz.png);
+    border-radius: 50%;
+    margin: 5px;
+    text-indent:-9999px;
+}
+
+.fact {
+    /*background: #fff;*/
+    box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
+}
+
+.fact .title {
+    padding-top: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background:#3498DB;
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+.fact .title_bottom {
+    background: url(../img/title_bottom_blue.png) center top no-repeat;
+    background-size: cover;
+    height: 61px;
+    z-index: 2;
+}
+
+.fact .img_fact {
+    position: relative;
+    top: -61px;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: center top;
+    z-index: -1;
+}
+
+.fact .img_bottom {
+    background: url(../img/img_bottom_white.png) center top no-repeat;
+    background-size: cover;
+    height: 61px;
+    z-index: 2;
+    margin-top: -121px;
+}
+
+.fact .content {
+    background: #fff;
+    padding: 0 20px 20px 20px;
+}
+
+.fact .space_img {
+    height: 230px;
+}
+
+.fact .btn_fact{
+    margin: 0 auto;
+    font-size: 15px;
+    background: #3498DB;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+
+.fact h3 {
+    margin-top: 0;
+}
+
+.fact p {
+    padding-bottom: 20px;
+}
+
+.padding {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
+.padding_big {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+
+/*===================================*/
+
+.line {
+    height: 5px;
+    background: #178ae4;
+    border-top: 1px solid #1789e4;
+    position: relative;
+    margin: 20px 0;
+}
+
+.photo__pic {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 38px !important;
+    color:#4A4A4A !important;
+    font-weight: 600;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+h3 {
+    font-size: 18px !important;
+    color:#4A4A4A !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.white_bg {
+    background: #fff;
 }

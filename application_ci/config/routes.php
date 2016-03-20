@@ -53,6 +53,6 @@ $route['footballnews/create'] = 'footballnews/create';
 $route['footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
 $route['(:any)'] = 'pages/show/$1';
-$route['default_controller'] = 'pages/show';
+$route['default_controller'] = 'footballnews';
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;

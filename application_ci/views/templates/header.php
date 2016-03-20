@@ -21,15 +21,15 @@
 	<body class="body_custom">
 		<div class="row header">
 			<div class="container">
-				<div class="top-box">
+				<div class="col-md-10 col-sm-9 col-xs-10 top-box">
                 	<a href="" class="logo"></a>
-                	<p><?php echo $title; ?><br><?php echo $title; ?></p>
+                	<p><?php echo $title; ?><br><?php echo $subtitle; ?></p>
                 	<div class="clear"></div>
             	</div>
-            	<div class="country-list">
-                        <a href="https://bookmaker-ratings.com.ua" class="ru">Русский</a>
-                        <a href="https://bookmaker-ratings.com" class="en">English</a>
-                        <a href="https://bookmaker-ratings.com" class="en">English</a>
+            	<div class="col-md-2 col-sm-3 col-xs-1 country-list">
+                    <a href="<?php echo base_url('footballnews/index/russian'); ?>" class="ru">Русский</a>
+                    <a href="" class="kz">Kazakh</a>
+                    <a href="<?php echo base_url('footballnews/index/english'); ?>" class="en">English</a> 
                 </div>
             </div>
 		</div>
