@@ -27,7 +27,6 @@ class Footballnews extends CI_Controller {
         $data['interesting_fact'] = $this->lang->line('interesting_fact');
         $data['another_fact'] = $this->lang->line('another_fact');
 
-
         $data['fact'] = $this->footballnews_model->get_fact();
         $data['forecast'] = $this->footballnews_model->get_forecast();
         $data['big_event'] = $this->footballnews_model->get_big_event();
@@ -40,6 +39,10 @@ class Footballnews extends CI_Controller {
         $this->load->view('templates/rightmodule', $data);
         $this->load->view('templates/footer', $data);
         }
+
+        // public function get_next_fact(){
+            
+        // }
 
         public function show($chpu = NULL)
         {

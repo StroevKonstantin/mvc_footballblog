@@ -15,9 +15,11 @@
                             <span class="tip-for-count">
                                 <p><?php echo $forecast['best_case']; ?></p>                   
                             </span>
-                            <span class="btn_forecast text-center">
-                                <?php echo $another_forecast; ?>         
-                            </span>
+                            <!-- <a href="<?php echo base_url('footballnews/get_next_fact'); ?>"> -->
+                                <span class="btn_forecast text-center">
+                                    <?php echo $another_forecast; ?>         
+                                </span>
+                            <!-- </a> -->
                         </div>
                     </div>
                 </div>
