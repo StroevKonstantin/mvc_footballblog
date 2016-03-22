@@ -9,7 +9,13 @@
 	viewportFactor : 0.2
 	} );
 </script>
-
+<script src="<?php echo base_url();?>assets/js/vanilla-slider.js"></script>
+<script>
+    var single = new Slider('.single', {
+      controlNext: '.s-next',
+      controlPrev: '.s-prev'
+    });
+</script>
 <div class="row footer">
 	<div class="container">
 		<div class="col-md-12 col-xs-12 text-left ">

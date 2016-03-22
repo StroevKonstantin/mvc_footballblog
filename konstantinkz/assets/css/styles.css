@@ -207,7 +207,6 @@ p {
     min-height: 350px;
     background-color: #212121;
     text-align: center;
-    box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
 }
 
 .topstake > .bg {
@@ -216,7 +215,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-filter: blur(12px);
+    -webkit-filter: blur(14px);
     filter: blur(12px);
     overflow: hidden;
     background-size: cover;
@@ -274,8 +273,8 @@ p {
 
 .topstake .info .circle {
     background-position: center;
-    height: 100%;
-    width: 49%;
+    height: 80%;
+    width: 45%;
     background-size: cover;
     display: inline-block;
 }
@@ -285,15 +284,17 @@ p {
     margin-top: 20px;
     font-size: 15px;
     color: #fff;
+    text-shadow: 2px 2px 2px rgba(33, 33, 33, 0.8);
 }
 
 .topstake .tip-for-count p{
-    margin: 25px 0;
+    margin: 15px 0;
     font-size: 15px;
     color: #fff;
-    background: #F27046;
+    /* background: #F27046; */
     padding: 10px;
     text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+    border: 1px solid #fff;
 }
 
 .topstake_padding {
@@ -301,13 +302,21 @@ p {
 }
 
 .btn_forecast{
-    width: 90%;
     margin: 0 auto;
     font-size: 15px;
     color: #fff;
-    border: 1px solid #fff;
     padding: 10px;
     text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+.div_btn_nextforecast{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
+    background: #F27046;
+    text-align: center;
+    padding: 15px;
 }
 
 .table_tour {
@@ -541,3 +550,35 @@ p {
 .white_bg {
     background: #fff;
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+.single {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.2);
+}
+
+
+.single ul {
+      list-style: outside none;
+      width: 10000%;
+      position: relative;
+      top: 0;
+      right: 0;
+      transition: all 0.6s ease;
+      padding: 0;
+      margin: 0;
+}
+
+.single li {
+      float: left;
+}
+
+
+
+
+
+

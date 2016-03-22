@@ -11,11 +11,12 @@ class Footballnews extends CI_Controller {
                 
         }
 
-        public function index($language = "")
+        public function index()
         {
-        $this->lang->load('Footballnews', $language);
 
         $data['news'] = $this->footballnews_model->get_news();
+        $data['forecast'] = $this->footballnews_model->get_forecast();
+        
 
         $data['meta_k'] = "Kakie to meta slova";
         $data['meta_d'] = "Kakoe to meta opisanie";
@@ -28,7 +29,7 @@ class Footballnews extends CI_Controller {
         $data['another_fact'] = $this->lang->line('another_fact');
 
         $data['fact'] = $this->footballnews_model->get_fact();
-        $data['forecast'] = $this->footballnews_model->get_forecast();
+        
         $data['big_event'] = $this->footballnews_model->get_big_event();
 
         $data['author'] = "Konstantin S.Stroyev";
@@ -39,10 +40,6 @@ class Footballnews extends CI_Controller {
         $this->load->view('templates/rightmodule', $data);
         $this->load->view('templates/footer', $data);
         }
-
-        // public function get_next_fact(){
-            
-        // }
 
         public function show($chpu = NULL)
         {

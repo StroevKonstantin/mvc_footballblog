@@ -68,41 +68,4 @@
                 <?php endforeach; ?>
             </ul>
         </div>
-        
-<!--         <div class="non_padding col-md-12">
-            <div class="table_tour">
-                <span class="title">Таблица турнира</span>
-                <div class="title_bottom"></div>
-    <table class="table table-striped text-center">
-        <thead>
-            <tr>
-                <th class="text-center">#</th>
-                <th class="text-center">Команда</th>
-                <th class="text-center">Победы</th>
-                <th class="text-center">Очки</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>John</td>
-                <td>Carter</td>
-                <td>@mail.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Peter</td>
-                <td>Parker</td>
-                <td>p@mail.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>John</td>
-                <td>Rambo</td>
-                <td>jo@mail.com</td>
-            </tr>
-        </tbody>
-    </table>
-            </div>
-        </div> -->
  

@@ -18,6 +18,16 @@
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
+<script>
+
+$(document).ready(function(){
+   var f = $("#f").width() ;
+   // alert(f); 
+   $('.single-box').css('width', f);   
+});
+    
+</script>
+
 	<body class="body_custom">
 		<div class="row header">
 			<div class="container">
@@ -27,9 +37,9 @@
                 	<div class="clear"></div>
             	</div>
             	<div class="col-md-2 col-sm-3 col-xs-1 country-list">
-                    <a href="<?php echo base_url('footballnews/index/russian'); ?>" class="ru">Русский</a>
+                    <a href="<?php echo base_url('langswitch/switchLanguage/russian'); ?>" class="ru">Русский</a>
                     <a href="" class="kz">Kazakh</a>
-                    <a href="<?php echo base_url('footballnews/index/english'); ?>" class="en">English</a> 
+                    <a href="<?php echo base_url('langswitch/switchLanguage/english'); ?>" class="en">English</a> 
                 </div>
             </div>
 		</div>
