@@ -6,9 +6,6 @@ class Footballnews extends CI_Controller {
                 parent::__construct();
                 $this->load->model('footballnews_model');
                 $this->load->helper('url_helper');
-                $this->lang->load('Footballnews');
-                
-                
         }
 
         public function index()
@@ -16,7 +13,6 @@ class Footballnews extends CI_Controller {
 
         $data['news'] = $this->footballnews_model->get_news();
         $data['forecast'] = $this->footballnews_model->get_forecast();
-        
 
         $data['meta_k'] = "Kakie to meta slova";
         $data['meta_d'] = "Kakoe to meta opisanie";

@@ -354,7 +354,7 @@ a.logo {
     margin: 0;
     padding: 25px;
     float: left;
-    background: url('http://news.sportbox.ru/sites/all/libraries/design/_spbver_/sportbox2015/logo.png') no-repeat top center;
+    background: url('../img/logo.png') no-repeat top center;
     -webkit-background-size: 250px 25px;
     -moz-background-size: 250px 25px;
     -o-background-size: 250px 25px;
