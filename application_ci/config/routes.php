@@ -50,8 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['footballnews/create'] = 'footballnews/create';
-$route['footballnews/(:any)'] = 'footballnews/show/$1';
+$route['footballnews/(ru|en)/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
+// $route['(ru|en)/(any)']='pages/view/about';
 $route['(:any)'] = 'pages/show/$1';
 $route['default_controller'] = 'footballnews';
 // $route['404_override'] = '';

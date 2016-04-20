@@ -46,7 +46,7 @@ class footballnews_model extends CI_Model {
             return $query->row_array();
         }
 
-        public function get_forecast($id = 1){
+        public function get_forecast(){
 
             $this->db->order_by('id','DESC');
             $query = $this->db->get('forecasts');
