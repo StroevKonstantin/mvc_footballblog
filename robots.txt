@@ -1,2 +1,5 @@
 User-agent: *
 Sitemap: http://rusmatch.vvvvvv.kz/sitemap.xml
+
+Allow: /ru/
+Disallow: /footballnews/create

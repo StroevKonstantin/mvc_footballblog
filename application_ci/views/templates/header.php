@@ -7,7 +7,9 @@
 		<title><?php echo $title; ?></title>
 		<meta name="description" content= <?php echo $meta_d; ?>>
 		<meta name="keywords" content= <?php echo $meta_k; ?>>
-		<meta name="author" content="Codrops" />
+		
+    <meta name="google-site-verification" content="LwGNWgZoxF6oWgj39GFPGG-nOHKUqsl71f63jqw6FXE" />
+
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/component.css">
     	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/default.css">

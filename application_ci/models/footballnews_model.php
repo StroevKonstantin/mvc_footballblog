@@ -1,5 +1,5 @@
 <?php
-class footballnews_model extends CI_Model {
+class Footballnews_model extends CI_Model {
 
         public function __construct(){
                 $this->load->database();
