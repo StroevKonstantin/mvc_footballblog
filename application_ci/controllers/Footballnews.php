@@ -14,8 +14,8 @@ class Footballnews extends CI_Controller {
         $data['news'] = $this->footballnews_model->get_news();
         $data['forecast'] = $this->footballnews_model->get_forecast();
 
-        $data['meta_k'] = "Kakie to meta slova";
-        $data['meta_d'] = "Kakoe to meta opisanie";
+        $data['meta_k'] = "рфпл, игры рфпл, рфпл 2016, чемпионат россии, премьер лига, прогнозы рфпл, прогноз на матчи рфпл, обзор рфпл, обзор тура рфпл, обзор матчей рфпл, интересные факты, интересные факты про футбол, сборная россии, сборная россия, сборная россии футболу евро, матчи сборной россии футболу евро";
+        $data['meta_d'] = "RUSMatch - информационный сайт о Российском футболе. Обзоры к матчам каждого тура, выделение особенной «Битвы тура», тактики и стратегии команд, ориентировочные составы и некоторые мнения по поводу исхода игр.";
 
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
@@ -106,13 +106,26 @@ public function create()
     $this->load->helper('form');
     $this->load->library('form_validation');
 
-    $data['title'] = 'Create a news item';
+    $data['title'] = $this->lang->line('title');
+    $data['subtitle'] = $this->lang->line('subtitle');
+
     $data['author'] = "Konstantin S.Stroyev";
     $data['email_author'] = "konstantin.s.stroyev@gmail.com";
+    
+    $data['meta_k'] = "";
+    $data['meta_d'] = "";
 
-    $this->form_validation->set_rules('title', 'Title', 'required');
-    $this->form_validation->set_rules('chpu', 'URL', 'required');
-    $this->form_validation->set_rules('text', 'Text', 'required');
+    $this->form_validation->set_rules('title', 'Title', 'required'); // 1
+    $this->form_validation->set_rules('chpu', 'URL', 'required'); // 4
+    $this->form_validation->set_rules('text', 'Text', 'required'); //6
+
+    $this->form_validation->set_rules('meta_d', 'Meta D', 'required');
+    $this->form_validation->set_rules('meta_k', 'Meta K', 'required');
+    $this->form_validation->set_rules('img_url', 'Url of img', 'required');
+
+    $this->form_validation->set_rules('small_description', 'Small description', 'required');
+    $this->form_validation->set_rules('subtitle', 'Subtitle', 'required');
+    $this->form_validation->set_rules('source', 'Source', 'required');
 
     if ($this->form_validation->run() === FALSE)
     {
@@ -128,4 +141,40 @@ public function create()
         $this->load->view('templates/footer', $data);
     }
 }
+
+
+public function removeentry($chpu){
+    $this->footballnews_model->delete_post($chpu); 
+
+    $data['title'] = $this->lang->line('title');
+    $data['subtitle'] = $this->lang->line('subtitle');
+
+    $data['author'] = "Konstantin S.Stroyev";
+    $data['email_author'] = "konstantin.s.stroyev@gmail.com";
+    
+    $data['meta_k'] = "";
+    $data['meta_d'] = "";
+
+    $this->load->view('templates/header', $data);
+    $this->load->view('news/successDelete');
+    $this->load->view('templates/footer', $data);  
+}
+
+public function removeentryfromdb(){
+    $data['title'] = $this->lang->line('title');
+    $data['subtitle'] = $this->lang->line('subtitle');
+
+    $data['news'] = $this->footballnews_model->get_news();
+
+    $data['author'] = "Konstantin S.Stroyev";
+    $data['email_author'] = "konstantin.s.stroyev@gmail.com";
+    
+    $data['meta_k'] = "";
+    $data['meta_d'] = "";
+
+    $this->load->view('templates/header', $data);
+    $this->load->view('news/delete');
+    $this->load->view('templates/footer', $data);
+}
+
 }

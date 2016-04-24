@@ -20,24 +20,37 @@ class Footballnews_model extends CI_Model {
         {
                 $this->load->helper('url');
 
-                // $chpu = url_title($this->input->post('title'), 'dash', TRUE);
-
                 $data = array(
-                    'title' => $this->input->post('title'),
-                    'chpu' => $this->input->post('chpu'),
-                    'text' => $this->input->post('text')
+                    'title' => $this->input->post('title'), //title 1
+                    'meta_k' => $this->input->post('meta_k'), // meta_k 2
+                    'meta_d' => $this->input->post('meta_d'), // meta_d 3
+                    'chpu' => $this->input->post('chpu'), // chpu 4
+                    'img_url' => $this->input->post('img_url'), // img_url 5
+                    'text' => $this->input->post('text'), // text 6
+                    
+                    'small_description' => $this->input->post('small_description'), // img_url 7
+                    // 'date' => $this->input->post('date'), // date 8
+
+                    'subtitle' => $this->input->post('subtitle'), // subtitle 9
+                    // 'rate' => $this->input->post('rate'), // rate 10
+
+                    'source' => $this->input->post('source') // 11
                 );
 
             return $this->db->insert('news', $data);
         }
 
+        public function delete_post($chpu)
+        {
+            $this->db->where('chpu', $chpu);
+            $this->db->delete('news');
+        }
+
         public function set_rate($chpu = FALSE)
         {
-
             $this->db->set('rate', 'rate+1', FALSE);
             $this->db->where('chpu', $chpu);
             $this->db->update('news');
-
         }
 
         public function get_fact($id = 1){

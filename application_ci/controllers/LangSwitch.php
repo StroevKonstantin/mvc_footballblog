@@ -1,12 +1,12 @@
 <?php
-class LangSwitch extends CI_Controller
+class Langswitch extends CI_Controller
 {
     public function __construct() {
         parent::__construct();
         $this->load->helper('url');
     }
 
-    function switchLanguage($language = "") {
+    function switchlanguage($language = "") {
 
     	if ($language != "") {
     		$language =  $language;

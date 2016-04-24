@@ -49,10 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
+$route['footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
 $route['footballnews/create'] = 'footballnews/create';
-$route['footballnews/(ru|en)/(:any)'] = 'footballnews/show/$1';
+$route['footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
 // $route['(ru|en)/(any)']='pages/view/about';
+$route['langswitch/switchlanguage/(:any)'] = 'langswitch/switchlanguage/$1';
 $route['(:any)'] = 'pages/show/$1';
 $route['default_controller'] = 'footballnews';
 // $route['404_override'] = '';
