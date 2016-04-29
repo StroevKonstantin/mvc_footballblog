@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title><?php echo $title; ?></title>
+		<title><?php echo $news_item['title'];?> - <?php echo $news_item['subtitle'];?> - <?php echo $title; ?></title>
 		<meta name="description" content= <?php echo $meta_d; ?>>
 		<meta name="keywords" content= <?php echo $meta_k; ?>>
 		
@@ -51,7 +51,8 @@ $(document).ready(function(){
                     id:36664410,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true
+                    accurateTrackBounce:true,
+                    webvisor:true
                 });
             } catch(e) { }
         });
@@ -82,9 +83,9 @@ $(document).ready(function(){
                 	<div class="clear"></div>
             	</div>
             	<div class="col-md-2 col-sm-3 col-xs-1 country-list">
-                    <a href="<?php echo base_url('langswitch/switchLanguage/russian'); ?>" class="ru">Русский</a>
+                    <a href="<?php echo base_url('langswitch/switchlanguage/russian'); ?>" class="ru">Русский</a>
                     <!-- <a href="" class="kz">Kazakh</a> -->
-                    <a href="<?php echo base_url('langswitch/switchLanguage/english'); ?>" class="en">English</a> 
+                    <a href="<?php echo base_url('langswitch/switchlanguage/english'); ?>" class="en">English</a> 
                 </div>
             </div>
 		</div>
