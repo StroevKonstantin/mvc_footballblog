@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-
+// $route['(ru|en)/footballnews'] = 'footballnews';
 
 
 $route['footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
@@ -63,5 +63,20 @@ $route['footballnews'] = 'footballnews';
 $route['langswitch'] = 'langswitch';
 $route['(:any)'] = 'pages/show/$1';
 $route['default_controller'] = 'footballnews';
+
+
+
+
+// URI like '/en/about' -> use controller 'about'
+// $route['^(en|ru)/(.+)$'] = "$2";
+ 
+// '/en', '/de', '/fr'  URIs -> use default controller
+// $route['^(en|ru)$'] = $route['default_controller'];
+//arjunphp.com/multilingual-codeigniter-i18n/#sthash.tGhskCXv.dpuf
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;
+
+$route['(\w{2})/(.*)'] = '$2';
+$route['(\w{2})'] = $route['default_controller'];
+
+

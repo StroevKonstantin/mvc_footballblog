@@ -31,7 +31,7 @@
                 <?php foreach ($news as $news_item): ?>
                 <li>
                     <div class="non_padding col-md-12 col-xs-12 grid-item">
-                        <a href="<?php echo base_url('footballnews/'.$news_item['chpu']); ?>">
+                        <a href="<?php echo base_url('footballnews/show/'.$news_item['chpu']); ?>">
                         <div class="non_padding col-md-12 col-xs-12 text-justify post">
                             <div class="non_padding col-xs-3 text-center"> 
                                 <div class="day">

@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/mvc_footballblog/konstantinkz';
+$config['base_url'] = 'http://localhost/mvc_footballblog/konstantinkz/';
 // $config['base_url'] = 'http://rusmatch.vvvvvv.kz/';
 /*
 |--------------------------------------------------------------------------
@@ -77,7 +77,18 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'russian';
+// $config['language']	= 'russian';
+
+$config['language'] = "russian";
+
+/* default language abbreviation */
+$config['language_abbr'] = "ru";
+
+/* set available language abbreviations */
+$config['lang_uri_abbr'] = array("ru" => "russian", "en" => "english");
+
+/* hide the language segment (use cookie) */
+$config['lang_ignore'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------

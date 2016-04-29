@@ -78,7 +78,7 @@ $(document).ready(function(){
 		<div class="row header">
 			<div class="container">
 				<div class="col-md-10 col-sm-9 col-xs-10 top-box">
-                	<a href="" class="logo"></a>
+                	<a href="<?php echo base_url();?>/footballnews" class="logo"></a>
                 	<p><?php echo $title; ?><br><?php echo $subtitle; ?></p>
                 	<div class="clear"></div>
             	</div>
