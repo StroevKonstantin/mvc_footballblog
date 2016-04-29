@@ -61,7 +61,7 @@ $route['footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
 // $route['(ru|en)/(any)']='pages/view/about';
 $route['langswitch'] = 'langswitch';
-$route['(:any)'] = 'pages/show/$1';
+$route['(:any)'] = 'footballnews';
 $route['default_controller'] = 'footballnews';
 
 
