@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
+
+
 $route['footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
 $route['footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
 $route['footballnews/create'] = 'footballnews/create';

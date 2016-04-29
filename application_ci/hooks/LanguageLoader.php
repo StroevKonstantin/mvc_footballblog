@@ -1,5 +1,5 @@
 <?php
-class LanguageLoader
+class Languageloader
 {
     function initialize() {
         $ci =& get_instance();
