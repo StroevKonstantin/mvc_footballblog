@@ -10,7 +10,7 @@ class Languageloader
             $current_lang = $ci->session->userdata('site_lang');
             $ci->lang->load('footballnews',$current_lang);
         } else {
-            $ci->lang->load('footballnews','english');
+            $ci->lang->load('footballnews','russian');
         }
     }
 }
