@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/showevent/krasnodar_vs_lokomotiv</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/spartak_razgromil_anji</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/musa_vernyl_cska_na_pervoe_mesto</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/pellegrini_v_zenite</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/president_rfs</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/new_coach_kazakhstan</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://rusmatch.vvvvvv.kz/ru/footballnews/show/capitan_of_russia_in_kazakhstan_championat</loc>
+  <priority>0.80</priority>
+</url>
+</urlset>

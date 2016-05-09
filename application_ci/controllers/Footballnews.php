@@ -17,7 +17,7 @@ class Footballnews extends CI_Controller {
         $data['news_item']['title'] = "Новости, обзоры, прогнозы";
         $data['news_item']['subtitle'] = "Главная";
 
-        $data['meta_k'] = "рфпл, игры рфпл, рфпл 2016, чемпионат россии, премьер лига, прогнозы рфпл, прогноз на матчи рфпл, обзор рфпл, обзор тура рфпл, обзор матчей рфпл, интересные факты, интересные факты про футбол, сборная россии, сборная россия, сборная россии футболу евро, матчи сборной россии футболу евро";
+        $data['meta_k'] = "рфпл, рпл, футбол, 2016, чемпионат россии, премьер лига, прогнозы, обзоры, тур, интересные факты, сборная россии, евро";
         $data['meta_d'] = "RUSMatch - информационный сайт о Российском футболе. Обзоры к матчам каждого тура, выделение особенной «Битвы тура», тактики и стратегии команд, ориентировочные составы и некоторые мнения по поводу исхода игр.";
 
         $data['title'] = $this->lang->line('title');
@@ -37,6 +37,7 @@ class Footballnews extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('news/index', $data);
         $this->load->view('templates/rightmodule', $data);
+        $this->load->view('news/about');
         $this->load->view('templates/footer', $data);
         }
 

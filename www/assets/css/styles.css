@@ -11,6 +11,11 @@
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+.about {
+    background: url('../img/footer_pattern.png') bottom left repeat-x #403f44;
+    padding: 20px 0 25px;
+}
+
 .footer {
     background-color: #fff;
    	padding: 20px 0 10px 0;
@@ -576,9 +581,6 @@ p {
 .single li {
       float: left;
 }
-
-
-
 
 
 
