@@ -57,11 +57,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
 $route['footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
 $route['footballnews/create'] = 'footballnews/create';
-$route['footballnews/(:any)'] = 'footballnews/show/$1';
+$route['ru/footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
 // $route['(ru|en)/(any)']='pages/view/about';
 $route['langswitch'] = 'langswitch';
 $route['(:any)'] = 'footballnews';
+
 $route['default_controller'] = 'footballnews';
 
 
