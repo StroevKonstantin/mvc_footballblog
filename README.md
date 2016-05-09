@@ -9,6 +9,7 @@ Technical info:
 - Additional libraries: Bootsrap
 
 If you want run this project, you should have local server kit - Denwer, MAMP, LAMP, etc - and a little patience.
+
 1. Download project.
 2. Place it in root folder of your local server (htdocs in MAMP case).
 3. Import database to your PHPMyAdmin.
