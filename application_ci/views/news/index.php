@@ -3,7 +3,7 @@
         <div class="padding col-md-12 col-xs-12">
             <section class="super-top">
                 <article>
-                    <a class="super-top__link" href="<?php echo base_url('footballnews/showevent/'.$big_event['chpu']); ?>">
+                    <a class="super-top__link" href="<?php echo base_url('ru/footballnews/showevent/'.$big_event['chpu']); ?>">
                     <section class="super-top__img super-top__img-bg" style="background-image:url(<?php echo base_url();?>assets/big_event_bg/<?php echo $big_event['bg']; ?>)"></section>
                     <div class="non_padding super-top__text-block-wrapper col-xs-11 col-md-5 col-sm-8">
                         <div class="super-top__text-block-overflow">
@@ -31,7 +31,7 @@
                 <?php foreach ($news as $news_item): ?>
                 <li>
                     <div class="non_padding col-md-12 col-xs-12 grid-item">
-                        <a href="<?php echo base_url('footballnews/show/'.$news_item['chpu']); ?>">
+                        <a href="<?php echo base_url('ru/footballnews/show/'.$news_item['chpu']); ?>">
                         <div class="non_padding col-md-12 col-xs-12 text-justify post">
                             <div class="non_padding col-xs-3 text-center"> 
                                 <div class="day">
