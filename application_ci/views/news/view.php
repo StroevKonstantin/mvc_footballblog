@@ -23,9 +23,13 @@
 			
 			<img class="photo__pic" src="<?php echo base_url();?>assets/img_posts/<?php echo $news_item['img_url']; ?>">
 			
-			
 			<?php echo $news_item['text']; ?>
 
+            <div class="text-center">
+                <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+                <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter" data-counter=""></div>
+            </div>   
 			</div>
 		</div>
 </div>

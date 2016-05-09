@@ -19,6 +19,8 @@ class Footballnews extends CI_Controller {
 
         $data['meta_k'] = "рфпл, рпл, футбол, 2016, чемпионат россии, премьер лига, прогнозы, обзоры, тур, интересные факты, сборная россии, евро";
         $data['meta_d'] = "RUSMatch - информационный сайт о Российском футболе. Обзоры к матчам каждого тура, выделение особенной «Битвы тура», тактики и стратегии команд, ориентировочные составы и некоторые мнения по поводу исхода игр.";
+        $data['meta_img'] = "qwe";
+        $data['meta_a'] = "qwe";        
 
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
@@ -37,7 +39,7 @@ class Footballnews extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('news/index', $data);
         $this->load->view('templates/rightmodule', $data);
-        $this->load->view('news/about');
+        // $this->load->view('news/about');
         $this->load->view('templates/footer', $data);
         }
 
@@ -55,13 +57,15 @@ class Footballnews extends CI_Controller {
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
 
+        $data['meta_img'] = $data['news_item']['img_url'];
+        $data['meta_a'] = $data['news_item']['chpu'];      
+
         $data['fact'] = $this->footballnews_model->get_fact();
         $data['forecast'] = $this->footballnews_model->get_forecast();
         $data['forecast_day'] = $this->lang->line('forecast_day');
         $data['another_forecast'] = $this->lang->line('another_forecast');
         $data['interesting_fact'] = $this->lang->line('interesting_fact');
         $data['another_fact'] = $this->lang->line('another_fact');
-
 
         $data['author'] = "Konstantin S.Stroyev";
         $data['email_author'] = "konstantin.s.stroyev@gmail.com";
@@ -85,6 +89,9 @@ class Footballnews extends CI_Controller {
 
         $data['meta_k'] = "asda";
         $data['meta_d'] = "asda";
+        $data['meta_img'] = "asda";
+        $data['meta_a'] = "asda";  
+
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
         $data['forecast_day'] = $this->lang->line('forecast_day');

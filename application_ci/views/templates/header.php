@@ -5,8 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title><?php echo $news_item['title'];?> - <?php echo $news_item['subtitle'];?> - <?php echo $title; ?></title>
-		<meta name="description" content="<?php echo $meta_d; ?>">
+		
+        <meta name="description" content="<?php echo $meta_d; ?>">
 		<meta name="keywords" content="<?php echo $meta_k; ?>">
+
+        <meta property="og:title" content="<?php echo $title; ?>"/>
+        <meta property="og:description" content="<?php echo $meta_d; ?>"/>
+        <meta property="og:image" content="<?php echo base_url();?>assets/img_posts/<?php echo $meta_img; ?>">
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="<?php echo base_url('footballnews/show/'.$meta_a); ?>" />
 		
         <meta name="google-site-verification" content="LwGNWgZoxF6oWgj39GFPGG-nOHKUqsl71f63jqw6FXE" />
 
