@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title><?php echo $news_item['title'];?> - <?php echo $news_item['subtitle'];?> - <?php echo $title; ?></title>
 		
+        <link rel="shortcut icon" href="<?php echo base_url();?>assets/favicon.png" type="image/png">
+
         <meta name="description" content="<?php echo $meta_d; ?>">
 		<meta name="keywords" content="<?php echo $meta_k; ?>">
 
@@ -17,7 +19,6 @@
 		
         <meta name="google-site-verification" content="LwGNWgZoxF6oWgj39GFPGG-nOHKUqsl71f63jqw6FXE" />
 
-		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/component.css">
     	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/default.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/styles.css">
