@@ -14,3 +14,7 @@ If you want run this project, you should have local server kit - Denwer, MAMP, L
 3. Import database to your PHPMyAdmin
 4. Change config.php file with your own parameters of database, user and etc
 5. Run!
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
