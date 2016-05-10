@@ -68,8 +68,35 @@ class Footballnews_model extends CI_Model {
 
         public function get_big_event($chpu = FALSE){
 
+            $this->db->order_by("id", "desc");
+            $this->db->limit(1);
+            $query = $this->db->get('big_event');
 
-            $query = $this->db->get_where('big_event', array('chpu' => $chpu));
+            // $query = $this->db->get_where('big_event', array('chpu' => $chpu));
             return $query->row_array();
+        }
+
+         public function set_event()
+        {
+                $this->load->helper('url');
+
+                $data = array(
+                    'title' => $this->input->post('title'), //title 1
+                    'meta_k' => $this->input->post('meta_k'), // meta_k 2
+                    'meta_d' => $this->input->post('meta_d'), // meta_d 3
+                    'chpu' => $this->input->post('chpu'), // chpu 4
+                    'bg' => $this->input->post('bg'), // img_url 5
+                    'text' => $this->input->post('text'), // text 6
+                    
+                    'article' => $this->input->post('article'), // img_url 7
+                    // 'date' => $this->input->post('date'), // date 8
+
+                    'subtitle' => $this->input->post('subtitle'), // subtitle 9
+                    // 'rate' => $this->input->post('rate'), // rate 10
+
+                    'source' => $this->input->post('source') // 11
+                );
+
+            return $this->db->insert('big_event', $data);
         }
 }

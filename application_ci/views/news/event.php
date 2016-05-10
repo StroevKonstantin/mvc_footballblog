@@ -26,6 +26,7 @@
 			
 			<?php echo $news_item['article']; ?>
 
+            <br />
 
             <div class="text-center">
                 <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>

@@ -87,10 +87,10 @@ class Footballnews extends CI_Controller {
                 show_404();
         }
 
-        $data['meta_k'] = "asda";
-        $data['meta_d'] = "asda";
-        $data['meta_img'] = "asda";
-        $data['meta_a'] = "asda";  
+        $data['meta_k'] = "";
+        $data['meta_d'] = "";
+        $data['meta_img'] = "";
+        $data['meta_a'] = "";  
 
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
@@ -125,6 +125,8 @@ public function create()
     
     $data['meta_k'] = "";
     $data['meta_d'] = "";
+    $data['meta_img'] = "";
+    $data['meta_a'] = "";  
 
     $this->form_validation->set_rules('title', 'Title', 'required'); // 1
     $this->form_validation->set_rules('chpu', 'URL', 'required'); // 4
@@ -153,6 +155,51 @@ public function create()
     }
 }
 
+public function createevent()
+{
+    $this->load->helper('form');
+    $this->load->library('form_validation');
+
+    $data['title'] = $this->lang->line('title');
+    $data['subtitle'] = $this->lang->line('subtitle');
+
+    $data['author'] = "Konstantin S.Stroyev";
+    $data['email_author'] = "konstantin.s.stroyev@gmail.com";
+    
+    $data['meta_k'] = "";
+    $data['meta_d'] = "";
+    $data['meta_img'] = "";
+    $data['meta_a'] = "";  
+
+    $this->form_validation->set_rules('title', 'Title', 'required'); // 1
+    $this->form_validation->set_rules('chpu', 'URL', 'required'); // 2
+    $this->form_validation->set_rules('article', 'Article', 'required'); //9
+
+    $this->form_validation->set_rules('meta_d', 'Meta D', 'required');//3
+    $this->form_validation->set_rules('meta_k', 'Meta K', 'required');//4
+    $this->form_validation->set_rules('bg', 'Background', 'required');//7
+
+    $this->form_validation->set_rules('text', 'Text', 'required');//6
+    $this->form_validation->set_rules('subtitle', 'Subtitle', 'required');//5
+    $this->form_validation->set_rules('source', 'Source', 'required');//8
+
+    if ($this->form_validation->run() === FALSE)
+    {
+        $this->load->view('templates/header', $data);
+        $this->load->view('news/createevent');
+        $this->load->view('templates/footer', $data);
+    }
+    else
+    {
+        $this->footballnews_model->set_event();
+        $this->load->view('templates/header', $data);
+        $this->load->view('news/success');
+        $this->load->view('templates/footer', $data);
+    }
+}
+
+
+
 
 public function removeentry($chpu){
     $this->footballnews_model->delete_post($chpu); 
@@ -165,6 +212,8 @@ public function removeentry($chpu){
     
     $data['meta_k'] = "";
     $data['meta_d'] = "";
+    $data['meta_img'] = "";
+    $data['meta_a'] = "";  
 
     $this->load->view('templates/header', $data);
     $this->load->view('news/successDelete');
@@ -182,6 +231,8 @@ public function removeentryfromdb(){
     
     $data['meta_k'] = "";
     $data['meta_d'] = "";
+    $data['meta_img'] = "";
+    $data['meta_a'] = "";  
 
     $this->load->view('templates/header', $data);
     $this->load->view('news/delete');

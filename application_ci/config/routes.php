@@ -53,10 +53,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 // $route['(ru|en)/footballnews'] = 'footballnews';
 
-
-$route['footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
-$route['footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
-$route['footballnews/create'] = 'footballnews/create';
+$route['ru/footballnews/createevent'] = 'footballnews/createevent';
+$route['ru/footballnews/removeentry/(:any)'] = 'footballnews/removeentry/$1';
+$route['ru/footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
+$route['ru/footballnews/create'] = 'footballnews/create';
 $route['ru/footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
 // $route['(ru|en)/(any)']='pages/view/about';
