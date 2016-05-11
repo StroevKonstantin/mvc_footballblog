@@ -17,10 +17,10 @@ class Footballnews extends CI_Controller {
         $data['news_item']['title'] = "Новости, обзоры, прогнозы";
         $data['news_item']['subtitle'] = "Главная";
 
-        $data['meta_k'] = "рфпл, рпл, футбол, 2016, чемпионат россии, премьер лига, прогнозы, обзоры, тур, интересные факты, сборная россии, евро";
-        $data['meta_d'] = "RUSMatch - информационный сайт о Российском футболе. Обзоры к матчам каждого тура, выделение особенной «Битвы тура», тактики и стратегии команд, ориентировочные составы и некоторые мнения по поводу исхода игр.";
-        $data['meta_img'] = "qwe";
-        $data['meta_a'] = "qwe";        
+        $data['meta_k'] = "рпл, футбол, 2016, чемпионат россии, лига, прогнозы, обзоры, тур, интересные факты, сборная россии";
+        $data['meta_d'] = "RUSMatch - блог о Российском футболе. Обзоры к матчам каждого тура, выделение «Битвы тура», тактики и трансферы команд, интересные факты и прогнозы на исходы игр.";
+        $data['meta_img'] = "";
+        $data['meta_a'] = "";        
 
         $data['title'] = $this->lang->line('title');
         $data['subtitle'] = $this->lang->line('subtitle');
@@ -45,6 +45,7 @@ class Footballnews extends CI_Controller {
 
         public function show($chpu = NULL)
         {
+        $data['news'] = $this->footballnews_model->get_relnews();
         $data['news_item'] = $this->footballnews_model->get_news($chpu);
 
         if (empty($data['news_item']))

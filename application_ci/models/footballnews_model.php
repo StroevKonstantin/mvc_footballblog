@@ -16,6 +16,14 @@ class Footballnews_model extends CI_Model {
             return $query->row_array();
         }
 
+        public function get_relnews($chpu = FALSE){
+
+            $this->db->order_by('id','DESC');
+            $this->db->limit(3);
+            $query = $this->db->get('news');
+            return $query->result_array();
+        }
+
         public function set_news()
         {
                 $this->load->helper('url');

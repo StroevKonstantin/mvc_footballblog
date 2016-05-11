@@ -77,18 +77,18 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-// $config['language']	= 'russian';
 
 $config['language'] = "russian";
 
 /* default language abbreviation */
-$config['language_abbr'] = "ru";
+$config['language_abbr'] = "ru"; 
 
 /* set available language abbreviations */
-$config['lang_uri_abbr'] = array("ru" => "russian", "en" => "english");
+$config['lang_uri_abbr'] = array("en" => "english", "ru" => "russian");
 
 /* hide the language segment (use cookie) */
 $config['lang_ignore'] = FALSE;
+ 
 
 /*
 |--------------------------------------------------------------------------

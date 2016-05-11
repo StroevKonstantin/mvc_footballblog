@@ -32,6 +32,25 @@
                 <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
                 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter" data-counter=""></div>
             </div>   
-			</div>
+			
+
+            <br />
+            <p>Последние новости:</p>
+            <?php foreach ($news as $news_item): ?>
+                
+
+                <li>
+                        <a href="<?php echo base_url('ru/footballnews/show/'.$news_item['chpu']); ?>">
+                        <?php echo $news_item['title'];?></a>
+                </li> 
+            <?php endforeach; ?>
+
+
+
+
+
+
+
+            </div>
 		</div>
 </div>

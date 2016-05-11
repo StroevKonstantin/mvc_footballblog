@@ -59,7 +59,12 @@ $route['ru/footballnews/removeentryfromdb'] = 'footballnews/removeentryfromdb';
 $route['ru/footballnews/create'] = 'footballnews/create';
 $route['ru/footballnews/(:any)'] = 'footballnews/show/$1';
 $route['footballnews'] = 'footballnews';
+
 // $route['(ru|en)/(any)']='pages/view/about';
+
+
+$route['ru/language'] = 'language';
+
 $route['langswitch'] = 'langswitch';
 $route['(:any)'] = 'footballnews';
 
